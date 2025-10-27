@@ -1,0 +1,566 @@
+[
+  {
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "hint": "Use a hash map to store complements (target - number) and their indices.",
+    "url": "https://leetcode.com/problems/two-sum/"
+  },
+  {
+    "title": "Valid Parentheses",
+    "difficulty": "Easy",
+    "hint": "Use a stack. Push opening brackets and pop when a matching closing bracket is found.",
+    "url": "https://leetcode.com/problems/valid-parentheses/"
+  },
+  {
+    "title": "Merge Two Sorted Lists",
+    "difficulty": "Easy",
+    "hint": "Create a dummy node and iteratively compare the heads of both lists, appending the smaller one.",
+    "url": "https://leetcode.com/problems/merge-two-sorted-lists/"
+  },
+  {
+    "title": "Best Time to Buy and Sell Stock",
+    "difficulty": "Easy",
+    "hint": "Iterate through the prices, keeping track of the minimum price found so far and the maximum profit.",
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+  },
+  {
+    "title": "Valid Palindrome",
+    "difficulty": "Easy",
+    "hint": "Use a two-pointer approach, one at the start and one at the end, moving inwards.",
+    "url": "https://leetcode.com/problems/valid-palindrome/"
+  },
+  {
+    "title": "Invert Binary Tree",
+    "difficulty": "Easy",
+    "hint": "Use recursion. Swap the left and right children of a node, then recurse on the children.",
+    "url": "https://leetcode.com/problems/invert-binary-tree/"
+  },
+  {
+    "title": "Valid Anagram",
+    "difficulty": "Easy",
+    "hint": "Use a frequency map (or an array of size 26) to count characters in both strings.",
+    "url": "https://leetcode.com/problems/valid-anagram/"
+  },
+  {
+    "title": "Binary Search",
+    "difficulty": "Easy",
+    "hint": "Maintain left, right, and middle pointers. Adjust the search space based on the middle element.",
+    "url": "https://leetcode.com/problems/binary-search/"
+  },
+  {
+    "title": "Flood Fill",
+    "difficulty": "Easy",
+    "hint": "Use Depth First Search (DFS) or Breadth First Search (BFS) to traverse and color the connected pixels.",
+    "url": "https://leetcode.com/problems/flood-fill/"
+  },
+  {
+    "title": "Lowest Common Ancestor of a BST",
+    "difficulty": "Easy",
+    "hint": "Utilize the properties of a BST. If both nodes are smaller/larger than the current node, move left/right.",
+    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+  },
+  {
+    "title": "Balanced Binary Tree",
+    "difficulty": "Easy",
+    "hint": "Use a recursive helper function that returns the height of a subtree. If any subtree is unbalanced, propagate -1.",
+    "url": "https://leetcode.com/problems/balanced-binary-tree/"
+  },
+  {
+    "title": "Linked List Cycle",
+    "difficulty": "Easy",
+    "hint": "Use Floyd's Tortoise and Hare algorithm with a slow and a fast pointer.",
+    "url": "https://leetcode.com/problems/linked-list-cycle/"
+  },
+  {
+    "title": "Implement Queue using Stacks",
+    "difficulty": "Easy",
+    "hint": "Use two stacks. One for pushing (enqueue) and another for popping (dequeue). Transfer elements when the pop stack is empty.",
+    "url": "https://leetcode.com/problems/implement-queue-using-stacks/"
+  },
+  {
+    "title": "First Bad Version",
+    "difficulty": "Easy",
+    "hint": "This is a classic binary search problem. The search space is the version numbers.",
+    "url": "https://leetcode.com/problems/first-bad-version/"
+  },
+  {
+    "title": "Ransom Note",
+    "difficulty": "Easy",
+    "hint": "Create a frequency map of characters in the magazine. Decrement counts for each character in the ransom note.",
+    "url": "https://leetcode.com/problems/ransom-note/"
+  },
+  {
+    "title": "Climbing Stairs",
+    "difficulty": "Easy",
+    "hint": "This is a dynamic programming problem. The number of ways to reach step n is ways(n-1) + ways(n-2).",
+    "url": "https://leetcode.com/problems/climbing-stairs/"
+  },
+  {
+    "title": "Longest Palindrome",
+    "difficulty": "Easy",
+    "hint": "Count character frequencies. The length is the sum of all even counts plus one if any odd count exists.",
+    "url": "https://leetcode.com/problems/longest-palindrome/"
+  },
+  {
+    "title": "Reverse Linked List",
+    "difficulty": "Easy",
+    "hint": "Iterate through the list, keeping track of the previous, current, and next nodes to reverse the pointers.",
+    "url": "https://leetcode.com/problems/reverse-linked-list/"
+  },
+  {
+    "title": "Majority Element",
+    "difficulty": "Easy",
+    "hint": "Use Boyer-Moore Voting Algorithm. Maintain a candidate and a counter.",
+    "url": "https://leetcode.com/problems/majority-element/"
+  },
+  {
+    "title": "Add Binary",
+    "difficulty": "Easy",
+    "hint": "Iterate from the end of both strings, simulating binary addition with a carry.",
+    "url": "https://leetcode.com/problems/add-binary/"
+  },
+  {
+    "title": "Diameter of Binary Tree",
+    "difficulty": "Easy",
+    "hint": "For each node, the diameter is the sum of the depths of its left and right subtrees. Find the maximum of these.",
+    "url": "https://leetcode.com/problems/diameter-of-binary-tree/"
+  },
+  {
+    "title": "Middle of the Linked List",
+    "difficulty": "Easy",
+    "hint": "Use a slow and a fast pointer. When the fast pointer reaches the end, the slow pointer will be at the middle.",
+    "url": "https://leetcode.com/problems/middle-of-the-linked-list/"
+  },
+  {
+    "title": "Maximum Depth of Binary Tree",
+    "difficulty": "Easy",
+    "hint": "Use recursion. The max depth is 1 + max(depth of left child, depth of right child).",
+    "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+  },
+  {
+    "title": "Contains Duplicate",
+    "difficulty": "Easy",
+    "hint": "Use a hash set to store numbers as you iterate. If you encounter a number already in the set, return true.",
+    "url": "https://leetcode.com/problems/contains-duplicate/"
+  },
+  {
+    "title": "Missing Number",
+    "difficulty": "Easy",
+    "hint": "The sum of numbers from 0 to n is n*(n+1)/2. The missing number is this expected sum minus the actual sum of the array.",
+    "url": "https://leetcode.com/problems/missing-number/"
+  },
+  {
+    "title": "3Sum",
+    "difficulty": "Medium",
+    "hint": "Sort the array. Iterate through it, and for each element, use a two-pointer approach on the rest of the array.",
+    "url": "https://leetcode.com/problems/3sum/"
+  },
+  {
+    "title": "Binary Tree Level Order Traversal",
+    "difficulty": "Medium",
+    "hint": "Use a queue for Breadth-First Search (BFS). Process nodes level by level.",
+    "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+  },
+  {
+    "title": "Clone Graph",
+    "difficulty": "Medium",
+    "hint": "Use a hash map to store visited nodes (mapping original nodes to their copies). Traverse the graph with DFS or BFS.",
+    "url": "https://leetcode.com/problems/clone-graph/"
+  },
+  {
+    "title": "Evaluate Reverse Polish Notation",
+    "difficulty": "Medium",
+    "hint": "Use a stack. When you see a number, push it. When you see an operator, pop two numbers, operate, and push the result.",
+    "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/"
+  },
+  {
+    "title": "Course Schedule",
+    "difficulty": "Medium",
+    "hint": "This is a topological sort problem. Use Kahn's algorithm (with in-degrees and a queue) or DFS to detect cycles.",
+    "url": "https://leetcode.com/problems/course-schedule/"
+  },
+  {
+    "title": "Implement Trie (Prefix Tree)",
+    "difficulty": "Medium",
+    "hint": "Create a TrieNode class with children (a hash map or array) and an isEndOfWord flag.",
+    "url": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+  },
+  {
+    "title": "Coin Change",
+    "difficulty": "Medium",
+    "hint": "Use dynamic programming. Let dp[i] be the minimum coins for amount i. dp[i] = 1 + min(dp[i - coin]) for all coins.",
+    "url": "https://leetcode.com/problems/coin-change/"
+  },
+  {
+    "title": "Product of Array Except Self",
+    "difficulty": "Medium",
+    "hint": "Make two passes. First, calculate prefix products. Second, calculate postfix products and multiply with the prefix result.",
+    "url": "https://leetcode.com/problems/product-of-array-except-self/"
+  },
+  {
+    "title": "Validate Binary Search Tree",
+    "difficulty": "Medium",
+    "hint": "Use recursion with a valid range (min, max). For each node, check if it's within the range and update the range for its children.",
+    "url": "https://leetcode.com/problems/validate-binary-search-tree/"
+  },
+  {
+    "title": "Number of Islands",
+    "difficulty": "Medium",
+    "hint": "Iterate through the grid. If you find a '1', increment island count and use DFS or BFS to sink the entire island (change '1's to '0's).",
+    "url": "https://leetcode.com/problems/number-of-islands/"
+  },
+  {
+    "title": "Rotting Oranges",
+    "difficulty": "Medium",
+    "hint": "Use a multi-source BFS. Start the queue with all initially rotten oranges. The number of minutes is the number of levels in the BFS.",
+    "url": "https://leetcode.com/problems/rotting-oranges/"
+  },
+  {
+    "title": "Search in Rotated Sorted Array",
+    "difficulty": "Medium",
+    "hint": "Use a modified binary search. In each step, determine which half of the array is sorted and check if the target lies in that half.",
+    "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+  },
+  {
+    "title": "Combination Sum",
+    "difficulty": "Medium",
+    "hint": "Use backtracking. At each step, decide whether to include the current number or move to the next.",
+    "url": "https://leetcode.com/problems/combination-sum/"
+  },
+  {
+    "title": "Permutations",
+    "difficulty": "Medium",
+    "hint": "Use backtracking. Recursively generate permutations by swapping elements.",
+    "url": "https://leetcode.com/problems/permutations/"
+  },
+  {
+    "title": "Merge Intervals",
+    "difficulty": "Medium",
+    "hint": "Sort the intervals by their start time. Iterate through and merge overlapping intervals.",
+    "url": "https://leetcode.com/problems/merge-intervals/"
+  },
+  {
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "difficulty": "Medium",
+    "hint": "Use recursion. If the current node is null or matches p or q, return it. Otherwise, search left and right. The LCA is where paths diverge.",
+    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
+  },
+  {
+    "title": "Time Based Key-Value Store",
+    "difficulty": "Medium",
+    "hint": "Use a hash map where keys map to a list of (timestamp, value) pairs. Use binary search on the list to find the correct value.",
+    "url": "https://leetcode.com/problems/time-based-key-value-store/"
+  },
+  {
+    "title": "Accounts Merge",
+    "difficulty": "Medium",
+    "hint": "Treat this as a graph problem where emails are nodes. Use Union-Find or DFS to find connected components of emails.",
+    "url": "https://leetcode.com/problems/accounts-merge/"
+  },
+  {
+    "title": "Sort Colors",
+    "difficulty": "Medium",
+    "hint": "Use the Dutch National Flag algorithm with three pointers: low, mid, and high.",
+    "url": "https://leetcode.com/problems/sort-colors/"
+  },
+  {
+    "title": "Word Break",
+    "difficulty": "Medium",
+    "hint": "Use dynamic programming. Let dp[i] be true if the substring s[0...i-1] can be segmented. dp[i] is true if dp[j] is true and s[j...i-1] is in the dictionary.",
+    "url": "https://leetcode.com/problems/word-break/"
+  },
+  {
+    "title": "Partition Equal Subset Sum",
+    "difficulty": "Medium",
+    "hint": "This is a variation of the knapsack problem. Use DP to find if a subset sums up to half of the total array sum.",
+    "url": "https://leetcode.com/problems/partition-equal-subset-sum/"
+  },
+  {
+    "title": "String to Integer (atoi)",
+    "difficulty": "Medium",
+    "hint": "Carefully handle whitespace, signs (+/-), and overflow/underflow conditions according to the rules.",
+    "url": "https://leetcode.com/problems/string-to-integer-atoi/"
+  },
+  {
+    "title": "Spiral Matrix",
+    "difficulty": "Medium",
+    "hint": "Use four pointers for the boundaries (top, bottom, left, right) and loop, shrinking the boundaries after each traversal.",
+    "url": "https://leetcode.com/problems/spiral-matrix/"
+  },
+  {
+    "title": "Set Matrix Zeroes",
+    "difficulty": "Medium",
+    "hint": "Use the first row and first column as markers to store which rows/columns need to be zeroed out. This avoids using extra space.",
+    "url": "https://leetcode.com/problems/set-matrix-zeroes/"
+  },
+  {
+    "title": "Minimum Height Trees",
+    "difficulty": "Medium",
+    "hint": "This is like peeling an onion. Use a topological sort approach. Start with all leaf nodes and iteratively remove them until you are left with 1 or 2 nodes.",
+    "url": "https://leetcode.com/problems/minimum-height-trees/"
+  },
+  {
+    "title": "Task Scheduler",
+    "difficulty": "Medium",
+    "hint": "Use a greedy approach with a max heap to always pick the most frequent task. Use a queue to handle the cooling period.",
+    "url": "https://leetcode.com/problems/task-scheduler/"
+  },
+  {
+    "title": "LRU Cache",
+    "difficulty": "Medium",
+    "hint": "Use a combination of a hash map (for O(1) lookups) and a doubly linked list (for O(1) additions/removals of the most/least recently used items).",
+    "url": "https://leetcode.com/problems/lru-cache/"
+  },
+  {
+    "title": "Kth Smallest Element in a BST",
+    "difficulty": "Medium",
+    "hint": "Perform an in-order traversal of the BST. The k-th element you visit is the answer.",
+    "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
+  },
+  {
+    "title": "Longest Repeating Character Replacement",
+    "difficulty": "Medium",
+    "hint": "Use a sliding window. Keep track of character counts in the window. The window is valid if (window length - count of most frequent char) <= k.",
+    "url": "https://leetcode.com/problems/longest-repeating-character-replacement/"
+  },
+  {
+    "title": "Container With Most Water",
+    "difficulty": "Medium",
+    "hint": "Use a two-pointer approach, starting from the ends of the array. Move the pointer pointing to the shorter line inward.",
+    "url": "https://leetcode.com/problems/container-with-most-water/"
+  },
+  {
+    "title": "Letter Combinations of a Phone Number",
+    "difficulty": "Medium",
+    "hint": "Use backtracking. Build combinations character by character, exploring all possibilities for each digit.",
+    "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/"
+  },
+  {
+    "title": "Find All Anagrams in a String",
+    "difficulty": "Medium",
+    "hint": "Use a sliding window and two frequency maps (one for the pattern, one for the current window).",
+    "url": "https://leetcode.com/problems/find-all-anagrams-in-a-string/"
+  },
+  {
+    "title": "Minimum Knight Moves",
+    "difficulty": "Medium",
+    "hint": "This is a shortest path on an unweighted graph problem. Use Breadth-First Search (BFS).",
+    "url": "https://leetcode.com/problems/minimum-knight-moves/"
+  },
+  {
+    "title": "Rotate Image",
+    "difficulty": "Medium",
+    "hint": "To rotate 90 degrees clockwise, first transpose the matrix, then reverse each row.",
+    "url": "https://leetcode.com/problems/rotate-image/"
+  },
+  {
+    "title": "Search a 2D Matrix",
+    "difficulty": "Medium",
+    "hint": "Treat the 2D matrix as a single sorted array and use binary search.",
+    "url": "https://leetcode.com/problems/search-a-2d-matrix/"
+  },
+  {
+    "title": "K Closest Points to Origin",
+    "difficulty": "Medium",
+    "hint": "Use a max heap of size K. Iterate through the points, and if a point's distance is smaller than the top of the heap, pop and push.",
+    "url": "https://leetcode.com/problems/k-closest-points-to-origin/"
+  },
+  {
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "Medium",
+    "hint": "Use a sliding window approach with a hash set or hash map to keep track of characters currently in the window.",
+    "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+  },
+  {
+    "title": "Group Anagrams",
+    "difficulty": "Medium",
+    "hint": "Use a hash map where the key is the sorted version of a string and the value is a list of its anagrams.",
+    "url": "https://leetcode.com/problems/group-anagrams/"
+  },
+  {
+    "title": "Maximum Product Subarray",
+    "difficulty": "Medium",
+    "hint": "Use dynamic programming. Keep track of both the maximum and minimum product ending at the current position.",
+    "url": "https://leetcode.com/problems/maximum-product-subarray/"
+  },
+  {
+    "title": "Insert Interval",
+    "difficulty": "Medium",
+    "hint": "Iterate through the intervals, adding all intervals that end before the new interval starts. Merge with overlapping intervals. Then add the rest.",
+    "url": "https://leetcode.com/problems/insert-interval/"
+  },
+  {
+    "title": "01 Matrix",
+    "difficulty": "Medium",
+    "hint": "Use a multi-source BFS. Initialize the queue with all cells containing 0 and mark their distances as 0.",
+    "url": "https://leetcode.com/problems/01-matrix/"
+  },
+  {
+    "title": "Top K Frequent Elements",
+    "difficulty": "Medium",
+    "hint": "Use a hash map to count frequencies, then use a min heap of size K or bucket sort to find the top K elements.",
+    "url": "https://leetcode.com/problems/top-k-frequent-elements/"
+  },
+  {
+    "title": "Daily Temperatures",
+    "difficulty": "Medium",
+    "hint": "Use a monotonic decreasing stack to store indices of temperatures. When you find a warmer day, pop from the stack and calculate the difference.",
+    "url": "https://leetcode.com/problems/daily-temperatures/"
+  },
+  {
+    "title": "Find the Duplicate Number",
+    "difficulty": "Medium",
+    "hint": "Treat the array as a linked list and use Floyd's Tortoise and Hare algorithm to find the cycle entrance.",
+    "url": "https://leetcode.com/problems/find-the-duplicate-number/"
+  },
+  {
+    "title": "Subsets",
+    "difficulty": "Medium",
+    "hint": "Use backtracking or a cascading approach. Iterate through the numbers, and for each number, add it to all existing subsets to create new ones.",
+    "url": "https://leetcode.com/problems/subsets/"
+  },
+  {
+    "title": "Word Search",
+    "difficulty": "Medium",
+    "hint": "Use DFS with backtracking. Start a search from every cell. Mark visited cells to avoid reusing them in the same path.",
+    "url": "https://leetcode.com/problems/word-search/"
+  },
+  {
+    "title": "Serialize and Deserialize Binary Tree",
+    "difficulty": "Hard",
+    "hint": "Use a pre-order traversal for serialization. A null marker (like '#') is needed to represent null children. Use a queue for deserialization.",
+    "url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+  },
+  {
+    "title": "Word Ladder",
+    "difficulty": "Hard",
+    "hint": "This is a shortest path problem on a graph. Use BFS. Nodes are words, and an edge exists between words that differ by one letter.",
+    "url": "https://leetcode.com/problems/word-ladder/"
+  },
+  {
+    "title": "Basic Calculator",
+    "difficulty": "Hard",
+    "hint": "Use a stack to handle parentheses. When you see '(', push the current result and sign. When you see ')', pop and calculate.",
+    "url": "https://leetcode.com/problems/basic-calculator/"
+  },
+  {
+    "title": "Median of Two Sorted Arrays",
+    "difficulty": "Hard",
+    "hint": "Use binary search on the smaller array to find the optimal partition point that divides both arrays into two halves.",
+    "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+  },
+  {
+    "title": "Largest Rectangle in Histogram",
+    "difficulty": "Hard",
+    "hint": "Use a monotonic increasing stack. When you find a bar shorter than the one at the top of the stack, calculate the area for the popped bars.",
+    "url": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+  },
+  {
+    "title": "Trapping Rain Water",
+    "difficulty": "Hard",
+    "hint": "Use a two-pointer approach. Maintain left_max and right_max heights. The water trapped at a position is determined by the minimum of these two.",
+    "url": "https://leetcode.com/problems/trapping-rain-water/"
+  },
+  {
+    "title": "Find Median from Data Stream",
+    "difficulty": "Hard",
+    "hint": "Use two heaps: a max heap for the smaller half of the numbers and a min heap for the larger half. Keep the heaps balanced.",
+    "url": "https://leetcode.com/problems/find-median-from-data-stream/"
+  },
+  {
+    "title": "Minimum Window Substring",
+    "difficulty": "Hard",
+    "hint": "Use a sliding window. Expand the window by moving the right pointer. Once the window is valid, shrink it from the left to find the minimum length.",
+    "url":"https://leetcode.com/problems/minimum-window-substring/"
+  },
+  {
+    "title": "Merge k Sorted Lists",
+    "difficulty": "Hard",
+    "hint": "Use a min heap to store the head of each of the k lists. Repeatedly extract the minimum and add the next element from its list.",
+    "url": "https://leetcode.com/problems/merge-k-sorted-lists/"
+  },
+  {
+    "title": "Longest Consecutive Sequence",
+    "difficulty": "Medium",
+    "hint": "Use a hash set for O(1) lookups. For each number, check if it's the start of a sequence (i.e., num-1 is not in the set). If it is, start counting upwards.",
+    "url": "https://leetcode.com/problems/longest-consecutive-sequence/"
+  },
+  {
+    "title": "Reorder List",
+    "difficulty": "Medium",
+    "hint": "Find the middle of the list, reverse the second half, and then merge the two halves.",
+    "url": "https://leetcode.com/problems/reorder-list/"
+  },
+  {
+    "title": "Binary Tree Right Side View",
+    "difficulty": "Medium",
+    "hint": "Use BFS (level order traversal). The last element at each level is the rightmost node.",
+    "url": "https://leetcode.com/problems/binary-tree-right-side-view/"
+  },
+  {
+    "title": "Graph Valid Tree",
+    "difficulty": "Medium",
+    "hint": "A valid tree must have n-1 edges and be fully connected. Use Union-Find or DFS to check for cycles and connectivity.",
+    "url": "https://leetcode.com/problems/graph-valid-tree/"
+  },
+  {
+    "title": "Number of Connected Components in an Undirected Graph",
+    "difficulty": "Medium",
+    "hint": "Use Union-Find to group nodes into components, or use DFS/BFS and a visited set to count the number of separate traversals needed.",
+    "url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/"
+  },
+  {
+    "title": "Longest Increasing Subsequence",
+    "difficulty": "Medium",
+    "hint": "Use dynamic programming. Let dp[i] be the length of the LIS ending at index i. dp[i] = 1 + max(dp[j]) for all j < i where nums[j] < nums[i].",
+    "url": "https://leetcode.com/problems/longest-increasing-subsequence/"
+  },
+  {
+    "title": "Pacific Atlantic Water Flow",
+    "difficulty": "Medium",
+    "hint": "Start DFS or BFS from all cells bordering each ocean. The answer is the set of cells reachable from both oceans.",
+    "url": "https://leetcode.com/problems/pacific-atlantic-water-flow/"
+  },
+  {
+    "title": "Non-overlapping Intervals",
+    "difficulty": "Medium",
+    "hint": "This is a greedy problem. Sort intervals by their end times. Keep track of the last valid interval's end time and count how many you have to remove.",
+    "url": "https://leetcode.com/problems/non-overlapping-intervals/"
+  },
+  {
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "difficulty": "Medium",
+    "hint": "The first element of preorder is the root. Find this root in inorder to separate the left and right subtrees.",
+    "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/"
+  },
+  {
+    "title": "Alien Dictionary",
+    "difficulty": "Hard",
+    "hint": "Build a dependency graph from adjacent words in the list. Then, perform a topological sort on the graph to find the character order.",
+    "url": "https://leetcode.com/problems/alien-dictionary/"
+  },
+  {
+    "title": "Regular Expression Matching",
+    "difficulty": "Hard",
+    "hint": "Use dynamic programming. Let dp[i][j] be true if the first i characters of the text match the first j characters of the pattern.",
+    "url": "https://leetcode.com/problems/regular-expression-matching/"
+  },
+  {
+    "title": "Longest Valid Parentheses",
+    "difficulty": "Hard",
+    "hint": "Use a stack to store indices of '('. When a ')' is found, pop from the stack. The length is the current index minus the index at the top of the stack.",
+    "url": "https://leetcode.com/problems/longest-valid-parentheses/"
+  },
+  {
+    "title": "Burst Balloons",
+    "difficulty": "Hard",
+    "hint": "Use dynamic programming. Consider the last balloon to be burst in an interval [i, j]. This splits the problem into two independent subproblems.",
+    "url": "https://leetcode.com/problems/burst-balloons/"
+  },
+  {
+    "title": "Maximum Profit in Job Scheduling",
+    "difficulty": "Hard",
+    "hint": "Sort jobs by end time. Use dynamic programming where dp[i] is the max profit up to time i. For each job, the choice is to take it or not.",
+    "url": "https://leetcode.com/problems/maximum-profit-in-job-scheduling/"
+  }
+]

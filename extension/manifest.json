@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Problem Solving Reminder",
+  "version": "1.0.0",
+  "description": "A Chrome Extension that helps programmers build a daily habit of problem solving.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon15.png",
+      "128": "icons/icon12.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon15.png",
+    "48": "icons/icon16.png",
+    "128": "icons/icon12.png"
+  },
+  "host_permissions": [
+    "http://localhost:8000/"
+  ]
+}
